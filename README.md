@@ -1,4 +1,5 @@
 # IR-23 Group 9
+[GitHub Pages link](https://samerarkab.github.io/)
 
 ### Table of contents
 * [General info](#general-info)
