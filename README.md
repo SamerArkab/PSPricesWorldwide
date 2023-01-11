@@ -40,5 +40,4 @@ This website is hosted on GitHub-Pages which is a simple static file hosting ser
 ![image](./example_run/IR1.png) <br>
 ![image](./example_run/IR2.png) <br>
 ![image](./example_run/IR3.png) <br>
-![image](./example_run/IR4.png) <br>
 <br>
