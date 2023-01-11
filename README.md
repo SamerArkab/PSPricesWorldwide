@@ -3,8 +3,8 @@
 <br><br>
 
 ### Table of contents
-* [General info](#general-info)
-* [Important info](#important)
+* [General Info](#general-info)
+* [Important Info](#important)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Example run](#example-run)
