@@ -4,7 +4,7 @@
 
 ### Table of contents
 * [General Info](#general-info)
-* [Important Info](#important)
+* [Important Info](#important-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Example run](#example-run)
