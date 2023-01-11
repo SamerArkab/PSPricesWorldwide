@@ -150,3 +150,36 @@ td {
 .filled_cell {
     background-color: #71c3f955;
 }
+
+.container {
+    display: flex;
+}
+
+.left-section {
+    width: 30%;
+}
+
+.right-section {
+    width: 70%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#poster {
+    width: 100%;
+}
+
+#button-relevance {
+    display: none;
+    width: 100%;
+    border: none;
+    background-color: #71c2f9;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#button-relevance:hover {
+    background-color: #1d80d7;
+}

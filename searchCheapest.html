@@ -7,6 +7,7 @@
     <meta name="description" content="IR - Group 9">
     <title>IR-G9 Search</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="js.js"></script>
 </head>
 
 <body class="body_style">
@@ -32,8 +33,44 @@
     <main>
         <div>
             <p>
-                <img src="images/sketch.png" alt="Sketch of the UI">
+                <form id="game-form">
+                    <label for="game-input">Enter game's name:
+                        <br>
+                        The search will last for approximately 30 seconds.</label><br>
+                    <input type="text" id="game-input" name="game"><br><br>
+                    <button type="button" onclick="searchGame()">Search</button>
+                </form>
             </p>
+
+            <div class="container">
+                <div class="left-section">
+                    <img id="poster" src="">
+                    <br><br>
+                    <div id="description-container"></div>
+                </div>
+                <div class="right-section">
+                    <template id="table-template">
+                <table>
+                  <thead>
+                    <tr>
+                        <th>#</th>
+                      <th>Country</th>
+                      <th>Name (in country of origin)</th>
+                      <th>Price (country's currency)</th>
+                      <th>Relevant</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-body"></tbody>
+                </table>
+              </template>
+
+                    <!-- Container element for the table -->
+                    <div id="table-container"></div>
+                    <br>
+                    <button type="button" id="button-relevance" hidden>Submit Relevance Feedback</button>
+                </div>
+            </div>
+
             <p class="custom_links">
                 <a href="index.html" class="back_intro">Back to introductory</a>
             </p>
