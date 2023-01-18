@@ -183,3 +183,17 @@ td {
 #button-relevance:hover {
     background-color: #1d80d7;
 }
+
+#slideshow-container {
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+#slideshow-image,
+#slideshow-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
