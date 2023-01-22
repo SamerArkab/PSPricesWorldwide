@@ -59,8 +59,8 @@ function searchGame() {
 let images = ["images/presentation/img1.jpg", "images/presentation/img2.jpg", "images/presentation/img3.jpg",
     "images/presentation/img4.jpg", "images/presentation/img5.jpg", "images/presentation/img6.jpg",
     "images/presentation/img7.jpg", "images/presentation/img8.jpg", "images/presentation/img9.jpg",
-    "images/presentation/img10.jpg", "images/presentation/img11.jpg", "images/presentation/img12.mp4",
-    "images/presentation/img13.jpg"
+    "images/presentation/img10.jpg", "images/presentation/img11.jpg", "images/presentation/img12.jpg",
+    "images/presentation/img13.jpg", "images/presentation/img14.mp4", "images/presentation/img15.jpg"
 ];
 let currentImage = 0;
 let isVideo = false;
