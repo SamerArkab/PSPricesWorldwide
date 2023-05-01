@@ -1,5 +1,5 @@
-# IR-23 Group 9
-[GitHub Pages link](https://samerarkab.github.io/)
+# PS Prices Worldwide
+[GitHub Pages link](https://samerarkab.github.io/PSPricesWorldwide/)
 <br><br>
 
 ### Table of contents
