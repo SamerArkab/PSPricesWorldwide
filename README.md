@@ -14,12 +14,12 @@ Find the cheapest price in any country for your desired PlayStation game in the 
 <br>This program will iterate through the PlayStation store website of 20 different countries, search for the user's desire game, retrieve the game's price, details and poster image.
 
 #### Important Info
-This website is hosted on GitHub-Pages which is a simple static file hosting service. In order to run this application using Flask you'll need to do the following: 
+This website is hosted on GitHub-Pages which is a simple static file hosting service. In order to run this application using Flask you'll need to do the following:
 - Download the files
 - Run Flask server:
   - open Command Prompt
-  - change directory to where the files are located
-  - type "flask run" (All packages in #setup must be installed beforehand) 
+  - change directory to where the project's files are located
+  - type "flask run" (All packages in #setup must be installed beforehand)
 - Use the site by searching for your favorite games' prices :)
 
 #### Technologies

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="IR - Group 9">
-    <title>IR-G9 Search</title>
+    <meta name="description" content="IR">
+    <title>IR Search</title>
     <link rel="stylesheet" href="styles.css">
     <script src="js.js"></script>
 </head>
@@ -15,32 +15,20 @@
         <div class="navbar">
             <a href="index.html">Introduction</a>
             <a href="searchCheapest.html">Search</a>
-            <div class="dropdown">
-                <button class="dropbtn">Group members
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="samerPage.html">Samer Arkab</a>
-                    <a href="kamelPage.html">Kamel Morad</a>
-                    <a href="fadiPage.html">Fadi Harb</a>
-                </div>
-            </div>
-            <a href="question3.html">Question 3</a>
-            <a href="project.html">Project</a>
-            <a href="presentation.html">Presentation</a>
+            <a href="exampleVideo.html">Example Video</a>
         </div>
     </header>
 
     <main>
         <div>
             <p>
-                <form id="game-form">
-                    <label for="game-input">Enter game's name:
-                        <br>
-                        The search will last for approximately 30 seconds.</label><br>
-                    <input type="text" id="game-input" name="game"><br><br>
-                    <button type="button" onclick="searchGame()">Search</button>
-                </form>
+            <form id="game-form">
+                <label for="game-input">Enter game's name:
+                    <br>
+                    The search will last for approximately 30 seconds.</label><br>
+                <input type="text" id="game-input" name="game"><br><br>
+                <button type="button" onclick="searchGame()">Search</button>
+            </form>
             </p>
 
             <div class="container">
@@ -51,24 +39,22 @@
                 </div>
                 <div class="right-section">
                     <template id="table-template">
-                <table>
-                  <thead>
-                    <tr>
-                        <th>#</th>
-                      <th>Country</th>
-                      <th>Name (in country of origin)</th>
-                      <th>Price (country's currency)</th>
-                      <th>Relevant</th>
-                    </tr>
-                  </thead>
-                  <tbody id="table-body"></tbody>
-                </table>
-              </template>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Country</th>
+                                    <th>Name (in country of origin)</th>
+                                    <th>Price (country's currency)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-body"></tbody>
+                        </table>
+                    </template>
 
                     <!-- Container element for the table -->
                     <div id="table-container"></div>
                     <br>
-                    <button type="button" id="button-relevance" hidden>Submit Relevance Feedback</button>
                 </div>
             </div>
 
@@ -80,7 +66,7 @@
 
     <footer class="footer_container">
         <div>
-            <p>Information Retrieval - Group 9 (Oct. 2022)</p>
+            <p>Information Retrieval (Oct. 2022)</p>
         </div>
     </footer>
 </body>

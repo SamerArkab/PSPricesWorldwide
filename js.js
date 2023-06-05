@@ -38,7 +38,7 @@ function searchGame() {
             for (let i = 0; i < Object.keys(data.prices).length; i++) {
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
-                    <td>${i+1}</td>
+                    <td>${i + 1}</td>
                     <td>${data.prices[i].Country}</td>
                     <td>${data.prices[i].Name}</td>
                     <td>${data.prices[i].Price}</td>
@@ -54,49 +54,3 @@ function searchGame() {
             document.getElementById('button-relevance').style.display = "block";
         });
 }
-
-
-let images = ["images/presentation/img1.jpg", "images/presentation/img2.jpg", "images/presentation/img3.jpg",
-    "images/presentation/img4.jpg", "images/presentation/img5.jpg", "images/presentation/img6.jpg",
-    "images/presentation/img7.jpg", "images/presentation/img8.jpg", "images/presentation/img9.jpg",
-    "images/presentation/img10.jpg", "images/presentation/img11.jpg", "images/presentation/img12.jpg",
-    "images/presentation/img13.jpg", "images/presentation/img14.mp4", "images/presentation/img15.jpg"
-];
-let currentImage = 0;
-let isVideo = false;
-let video = document.getElementById("slideshow-video");
-
-// function to update the displayed image/video
-function updateMedia() {
-    if (isVideo) {
-        video.style.display = "block";
-        document.getElementById("slideshow-image").style.display = "none";
-        document.getElementById("video-source").src = images[currentImage];
-    } else {
-        document.getElementById("slideshow-image").src = images[currentImage];
-        document.getElementById("slideshow-image").style.display = "block";
-        video.style.display = "none";
-    }
-}
-
-function prevMedia() {
-    currentImage--;
-    if (currentImage < 0) {
-        currentImage = images.length - 1;
-    }
-    isVideo = images[currentImage].endsWith(".mp4");
-    updateMedia();
-}
-
-function nextMedia() {
-    currentImage++;
-    if (currentImage >= images.length) {
-        currentImage = 0;
-    }
-    isVideo = images[currentImage].endsWith(".mp4");
-    updateMedia();
-}
-
-// show the first media when the page loads
-isVideo = images[currentImage].endsWith(".mp4");
-updateMedia();
