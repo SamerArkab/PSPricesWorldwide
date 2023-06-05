@@ -2,6 +2,8 @@
 [GitHub Pages link](https://samerarkab.github.io/PSPricesWorldwide/)
 <br><br>
 
+* TODO: I need to implement Bootstrap support to enhance responsiveness on smaller screens.
+
 ### Table of contents
 * [General Info](#general-info)
 * [Important Info](#important-info)
