@@ -47,6 +47,10 @@ div {
     background-color: rgb(66, 95, 146);
 }
 
+.nav-link.active {
+    background-color: rgb(49, 78, 126);
+}
+
 
 /* Custom links */
 
@@ -62,7 +66,7 @@ div {
 /* Footer container */
 
 .footer_container {
-    position: relative;
+    
     font-size: 10px;
 }
 
@@ -105,3 +109,12 @@ td {
 #poster {
     width: 100%;
 }
+
+.responsive-video {
+    width: 70%;
+}
+
+.video-container {
+    flex-grow: 1;
+    position: relative;
+  }

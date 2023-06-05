@@ -42,7 +42,6 @@ function searchGame() {
                     <td>${data.prices[i].Country}</td>
                     <td>${data.prices[i].Name}</td>
                     <td>${data.prices[i].Price}</td>
-                    <td><input type="checkbox"></td>
                 `;
                 tableBody.appendChild(tr);
             }

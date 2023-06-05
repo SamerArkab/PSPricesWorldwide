@@ -13,9 +13,9 @@
 <body class="body_style">
     <header>
         <div class="navbar">
-            <a href="index.html">Introduction</a>
-            <a href="searchCheapest.html">Search</a>
-            <a href="exampleVideo.html">Example Video</a>
+            <a href="index.html" class="nav-link">Introduction</a>
+            <a href="searchCheapest.html" class="nav-link active">Search</a>
+            <a href="exampleVideo.html" class="nav-link">Example Video</a>
         </div>
     </header>
 
@@ -25,7 +25,7 @@
             <form id="game-form">
                 <label for="game-input">Enter game's name:
                     <br>
-                    The search will last for approximately 30 seconds.</label><br>
+                    The search will last for approximately 15 seconds.</label><br>
                 <input type="text" id="game-input" name="game"><br><br>
                 <button type="button" onclick="searchGame()">Search</button>
             </form>
@@ -48,7 +48,6 @@
                                     <th>Price (country's currency)</th>
                                 </tr>
                             </thead>
-                            <tbody id="table-body"></tbody>
                         </table>
                     </template>
 

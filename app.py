@@ -13,27 +13,17 @@ import requests
 from bs4 import BeautifulSoup
 
 
-# Dictionary of 20 countries
+# Dictionary of 10 countries
 countries = {
-    "Argentina": "es-ar",
     "Brasil": "pt-br",
-    "Croatia": "en-hr",
-    "Denmark": "en-dk",
-    "France": "fr-fr",
-    "Hong Kong": "en-hk",
     "India": "en-in",
-    "Indonesia": "en-id",
-    "Ireland": "en-ie",
     "Israel": "en-il",
     "Italy": "it-it",
     "Romania": "en-ro",
-    "Russia": "ru-ru",
     "Spain": "es-es",
     "Sweden": "en-se",
-    "Switzerland": "fr-ch",
     "Thailand": "en-th",
     "Turkey": "en-tr",
-    "Ukraine": "uk-ua",
     "United States": "en-us"
 }
 
