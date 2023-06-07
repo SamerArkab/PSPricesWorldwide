@@ -1,107 +1,73 @@
 .body_style {
     background-image: url("images/ps_bg.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     color: rgb(255, 255, 255);
     text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
-    font-size: 22px;
+    font-size: 1.3em;
     font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
 }
 
-
-/* Make narrower new line height */
-
-p {
-    line-height: 5px;
+.my-bg{
+    background-color: #0e3d5d;
 }
-
-div {
-    line-height: 20px;
-}
-
-
-/* Navbar container */
-
-.navbar {
-    overflow: hidden;
-    background-color: rgb(36, 64, 113);
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-}
-
-
-/* Links inside the navbar */
 
 .navbar a {
-    float: left;
     font-size: 16px;
     color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
-
-
-/* Add a red background color to navbar links on hover */
 
 .navbar a:hover {
     background-color: rgb(66, 95, 146);
+    border-radius: 0.4rem;
 }
 
 .nav-link.active {
     background-color: rgb(49, 78, 126);
 }
 
-
-/* Custom links */
-
 .custom_links a {
     color: #71c2f9;
 }
 
 .custom_links a:hover {
-    text-shadow: -1px 0 rgb(65, 128, 216), 0 1px rgb(65, 128, 216), 1px 0 rgb(65, 128, 216), 0 -1px rgb(65, 128, 216);
+    background-color: #3e7ea9;
+    color: #71c2f9;
 }
 
-
-/* Footer container */
+.my-btn{
+    background-color: rgb(47, 100, 147);
+    padding: 0.1rem;
+}
 
 .footer_container {
-    
     font-size: 10px;
 }
-
-
-/* Back to introduction page link */
-
-.back_intro {
-    font-size: 12px;
-}
-
-
-/* Table borders */
 
 table,
 th,
 td {
-    border: 2px solid rgb(5, 160, 216);
+    border: 0.2rem solid rgb(40, 160, 204);
     text-align: center;
     font-weight: bold;
+    background-color: rgba(40, 160, 204, 0.1);  
 }
 
-.filled_cell {
-    background-color: #71c3f955;
-}
-
-.container {
+.row {
     display: flex;
 }
 
 .left-section {
-    width: 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
 }
 
 .right-section {
-    width: 70%;
+    flex: 0 0 70%;
+    max-width: 70%;
     margin-left: 3%;
     margin-right: 3%;
 }
@@ -111,10 +77,10 @@ td {
 }
 
 .responsive-video {
-    width: 70%;
+    margin-top: 1rem;
+    width: 100%;
 }
 
-.video-container {
-    flex-grow: 1;
-    position: relative;
-  }
+.form-control{
+    width: 50%;
+}

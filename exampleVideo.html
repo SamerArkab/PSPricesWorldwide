@@ -6,37 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="IR">
     <title>IR Example Run</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="body_style">
     <header>
-        <div class="navbar">
-            <a href="index.html" class="nav-link">Introduction</a>
-            <a href="searchCheapest.html" class="nav-link">Search</a>
-            <a href="exampleVideo.html" class="nav-link active">Example Video</a>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark my-bg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="searchCheapest.html">Search</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="exampleVideo.html">Example Video</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <div>
-            <div id="slideshow-container">
+    <main class="container">
+        <div class="row">
+            <div id="slideshow-container" class="col-md-12">
                 <video class="responsive-video" controls>
                     <source src="example_run/VideoRun.mp4" type="video/mp4">
                 </video>
             </div>
-            <p class="custom_links">
-                <a href="index.html" class="back_intro">Back to introductory</a>
-            </p>
         </div>
     </main>
 
     <footer class="footer_container">
-        <div>
+        <div class="container">
             <p>Information Retrieval (Oct. 2022)</p>
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

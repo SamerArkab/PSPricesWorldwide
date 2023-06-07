@@ -6,47 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="IR">
     <title>Information Retrieval</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="body_style">
     <header>
-        <div class="navbar">
-            <a href="index.html" class="nav-link active">Introduction</a>
-            <a href="searchCheapest.html" class="nav-link">Search</a>
-            <a href="exampleVideo.html" class="nav-link">Example Video</a>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark my-bg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="searchCheapest.html">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exampleVideo.html">Example Video</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <main>
+    <main class="container mt-4">
         <h1>PlayStation Store Cheapest Price Finder</h1>
         <div>
-            <p>
-                This project of Information Retrieval will scrape all games from the PS store, but with an exciting
-                extra feature!
-            </p>
-            <p>
-                As you might have already known, sometimes, the same game has different prices in different countries.
-            </p>
-            </p>
-            <p>
-                Therefore, some countries will have a much cheaper price compared to others!!
-            </p>
+            This project of Information Retrieval will scrape all games from the PS store, but with an exciting
+            extra feature!<br>
+            As you might have already known, sometimes, the same game has different prices in different countries.<br>
+            Therefore, some countries will have a much cheaper price compared to others.
         </div>
         <div>
-            <p>My goal is to find the cheapest price for your desired game in the <b><u>simplest and most
+            <p>The goal is to find the cheapest price for your desired game in the <b><u>simplest and most
                         efficient</u></b> possible way.</p>
-            <p class="custom_links" id="search_page">All you have to do now is <a href="searchCheapest.html">BEGIN
+            <p class="custom_links" id="search_page">All you have to do now is <a href="searchCheapest.html"
+                    class="btn my-btn">BEGIN
                     SEARCHING</a></p>
         </div>
-        <br /><br />
     </main>
 
     <footer class="footer_container">
-        <div>
+        <div class="container">
             <p>Information Retrieval (Oct. 2022)</p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

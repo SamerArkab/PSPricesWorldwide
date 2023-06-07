@@ -6,69 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="IR">
     <title>IR Search</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="js.js"></script>
 </head>
 
 <body class="body_style">
     <header>
-        <div class="navbar">
-            <a href="index.html" class="nav-link">Introduction</a>
-            <a href="searchCheapest.html" class="nav-link active">Search</a>
-            <a href="exampleVideo.html" class="nav-link">Example Video</a>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark my-bg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Introduction</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="searchCheapest.html">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exampleVideo.html">Example Video</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <main>
+    <main style="margin-left: 0.4rem; margin-right: 0.4rem;">
         <div>
             <p>
             <form id="game-form">
-                <label for="game-input">Enter game's name:
-                    <br>
-                    The search will last for approximately 30 seconds.</label><br>
-                <input type="text" id="game-input" name="game"><br><br>
-                <button type="button" onclick="searchGame()">Search</button>
+                <div class="form-group">
+                    <p>Enter game's name:
+                        <br>
+                        The search will last for approximately 30 seconds.
+                    </p>
+                    <input type="text" id="game-input" name="game" class="form-control"><br>
+                    <button type="button" onclick="searchGame()" class="btn btn-primary">Search</button>
+                </div>
             </form>
             </p>
 
             <div class="container">
-                <div class="left-section">
-                    <img id="poster" src="">
-                    <br><br>
-                    <div id="description-container"></div>
-                </div>
-                <div class="right-section">
-                    <template id="table-template">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Country</th>
-                                    <th>Name (in country of origin)</th>
-                                    <th>Price (country's currency)</th>
-                                </tr>
-                            </thead>
-                            <tbody id="table-body"></tbody>
-                        </table>
-                    </template>
+                <div class="row">
+                    <!-- Left Section -->
+                    <div class="col-lg-6">
+                        <img id="poster" src="" class="img-fluid">
+                        <br><br>
+                        <div id="description-container"></div>
+                    </div>
+                    <!-- Right Section -->
+                    <div class="col-lg-6">
+                        <template id="table-template">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Country</th>
+                                        <th>Name (in country of origin)</th>
+                                        <th>Price (country's currency)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table-body"></tbody>
+                            </table>
+                        </template>
 
-                    <!-- Container element for the table -->
-                    <div id="table-container"></div>
-                    <br>
+                        <!-- Container element for the table -->
+                        <div id="table-container"></div>
+                        <br>
+                    </div>
                 </div>
             </div>
 
-            <p class="custom_links">
-                <a href="index.html" class="back_intro">Back to introductory</a>
-            </p>
         </div>
     </main>
 
-    <footer class="footer_container">
+    <footer class="footer_container" style="margin-left: 0.4rem;">
         <div>
             <p>Information Retrieval (Oct. 2022)</p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

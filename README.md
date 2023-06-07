@@ -2,8 +2,6 @@
 [GitHub Pages link](https://samerarkab.github.io/PSPricesWorldwide/)
 <br><br>
 
-* TODO: I need to implement Bootstrap support to enhance responsiveness on smaller screens.
-
 ### Table of contents
 * [General Info](#general-info)
 * [Important Info](#important-info)
@@ -39,6 +37,5 @@ This website is hosted on GitHub-Pages which is a simple static file hosting ser
 * pip install Flask-Cors
 
 #### Example run
-![image](./images/IR1.png) <br><br>
-![image](./images/IR2.png) <br>
+![image](./images/IR1.png) <br>
 <br>
