@@ -37,5 +37,5 @@ This website is hosted on GitHub-Pages which is a simple static file hosting ser
 * pip install Flask-Cors
 
 #### Example run
-![image](./images/IR1.png) <br>
+![image](./images/IR.png) <br>
 <br>
